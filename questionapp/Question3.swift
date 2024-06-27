@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Question3.swift
 //  questionapp
 //
 //  Created by tia on 6/26/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Question3: View {
     var body: some View {
         NavigationStack {
             ZStack {
@@ -20,25 +20,25 @@ struct ContentView: View {
                     Spacer()
                  
                     
-                    Text("Which do you like best?")
+                    Text("What's your favorite season?")
                     
                         
                                               
                     
-                    NavigationLink(destination: Dogs()) {
-                        Text("Dogs")
+                    NavigationLink(destination: Summer()) {
+                        Text("Summer")
                             .padding()
                     }
                     
                     
-                        NavigationLink(destination: Cats()) {
-                            Text("Cats")
+                        NavigationLink(destination: Fall()) {
+                            Text("Fall")
                             
                             
                         }
                     Spacer()
-                    NavigationLink(destination: Question2()) {
-                        Text("Next")
+                    NavigationLink(destination: ContentView()) {
+                        Text("Play Again")
                             .padding()
                     }
                     
@@ -48,7 +48,6 @@ struct ContentView: View {
         }
     
 }
-
 #Preview {
-    ContentView()
+    Question3()
 }
